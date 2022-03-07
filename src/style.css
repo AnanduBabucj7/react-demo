@@ -1,0 +1,148 @@
+h1,
+p {
+  font-family: sans-serif;
+}
+.msg {
+  bottom: 50px;
+}
+body {
+  font: 14px 'Century Gothic', Futura, sans-serif;
+  /* margin: 20px; */
+}
+.products,
+.jobs {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+button,
+input {
+  padding: 1rem;
+  display: inline-block;
+  border: 2px solid green;
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+.nav-link {
+  text-decoration: none;
+  display: inline;
+  color: antiquewhite;
+  padding: 1rem;
+}
+.active-link {
+  padding: 1rem;
+  display: inline-block;
+  background-color: white;
+  color: black;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  align-items: center;
+  border: 5px solid white;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+.box:hover {
+  background-color: rgb(76, 8, 139);
+}
+.box-right {
+  background-color: green;
+}
+.box-wrong {
+  background-color: red;
+}
+
+span {
+  color: green;
+}
+/* form {
+  position: fixed; 
+  bottom: 10px; 
+}
+.msg {
+  display: grid;
+  height: 70vh;
+} */
+.msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  bottom: 50px;
+  overflow-y: scroll;
+}
+
+.red-box {
+  background-color: red;
+}
+.green-box {
+  background-color: green;
+}
+button {
+  padding: 1rem;
+  border: 0px;
+  margin: 2px;
+  /* color: white; */
+  background-color: blueviolet;
+}
